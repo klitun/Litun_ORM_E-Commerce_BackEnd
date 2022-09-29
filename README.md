@@ -2,12 +2,13 @@
 
 ## Description
 ```
-
+Fixing the backend for existing code in javascript, using MySQL and Insomnia
+Setting up backend for GET, POST, PUT and DELETE routes to view, create, update and delete data in Insomnia
 ```
 
 ## Acceptance Criteria
 
-```md
+```
 GIVEN a functional Express.js API
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
 THEN I am able to connect to a database using Sequelize
@@ -22,15 +23,18 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 
 ## Screenshot
-
+![Example of app in use in Insomnia](./assets/screenshot.png)
 
 ## Installation and Usage
 
 ```
 Run npm i to install dependancies
-Run node index to start
-
+Enter your credentials in .env file
+Run mysql -u root -p and enter password to start mysql
+In mysql run SOURCE db/schema.sql to initiate database
+Run node seeds/index.js to seed database
+Run npm start to start server
 ```
 
 ### Video Link
-
+[Video Link](https://drive.google.com/file/d/1b_WEXPejnf3DZHPEclzBK6HICH987_Rl/view)
